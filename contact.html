@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .row {
+                width:350px;
+                display: -ms-flexbox; /* IE 10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE 10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            
+            /* Create two equal columns that sits next to each other */
+            .column {
+                -ms-flex: 33.3%; /* IE 10 */
+                flex: 33.3%;
+                padding: 0 4px;
+            }
+            
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+            }
+          </style>
+    </head>
+    <title>Contact | Rencheng Wang</title>
+    <body>
+        <header>
+            <div style="padding-top:20px;">
+                <div class="title">
+                    <div style="padding-left:30px;">
+                        <span style="color:rgb(78,70,79); margin-right:20px;">Rencheng Wang</span>
+                        <span style="color:rgb(122,114,123)">Swimming In the Sea of Research</span>
+                    </div>
+                </div>
+                <div id="menu">
+                    <a id="home_btn" class="tab" style="border: none;" href="index.html">Home</a>
+                    <div id="vita_menu_btn" style="position: relative; float:left">
+                        <a  id="vita-btn" class="tab" href="vita.html">Vita</a>
+                        <div id="vita_menu">
+                            <ul>
+                                <li><a id="education_btn" href='education.html'>Education</a></li>
+                                <li><a id="teaching_btn" href='teaching.html'>Teaching</a></li>
+                                <li><a id="activities_btn" href='activities.html'>Activities</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>    
+                    <a id="research_btn" class="tab" href="research.html">Research</a>
+                    <a id="beyond_btn" class="tab" href="beyond.html">Beyond</a>
+                    <a id="contact_btn" class="tab" href="contact.html" style="color:black;">Contact</a>
+                </div>
+            </div>
+            
+        </header>
+        <main>
+            <div id='beyond'>
+                <div style="height: 30px; background-color:white; background-image:url(images/1_4.png); box-shadow: 0 0 5px rgba(0, 0, 0, .7);"></div>
+                <div style="background-color:rgb(166,158,167);height:400px;">
+                    <div style="margin:0 150px;">
+                        <img src="images/contact_1.webp" style="width:50%;height:100%;">
+                        <img src="images/contact_2.webp" style="width:50%; float:right; height:100%;">
+                    </div>
+                </div>
+                <div style="height: 40px; background-color:white;"></div>
+                <div style="background-color:rgb(166,158,167);display:flex;">
+                    <div style="width:50%;position:relative; height:387px;">
+                        <div style="background-color:white; width:500px; padding:20px; position:absolute; top:-100px; right:-80px;">
+                            <div class="green" style="font-size:x-large;">Contact Me</div>
+                            <div style="margin: 20px 0; color: rgba(0, 0, 0, .7);">If you have any questions, please let me know.</div>
+                            <form>
+                                <input type="text" class="contact_input" placeholder="Name *" required>
+                                <input type="email" pattern="^.+@.+\.[a-zA-Z]{2,63}$" autocomplete="off" class="contact_input" placeholder="Email *" required>
+                                <input type="text" class="contact_input" placeholder="Subject">
+                                <textarea class="contact_input" placeholder="Message" style="height:200px;"></textarea>
+                                <input type="submit" value="send" style="margin-top:10px; width:45px; height:30px; background-color:black; color:white;border:none;display:block;margin-left:auto;">
+                            </form>
+                            
+                            
+                        </div>
+                    </div>
+                    <div style="margin-left:130px;">
+                        <p style="color:rgba(0,0,0,.9);">Rencheng Wang</p>
+                        <p style="font-size:small; color:rgb(106, 98, 107)">Singapore Management University<br>
+                            School of Accountancy<br>
+                            60 Stamford Road<br>
+                            178900 Singapore</p>
+                            <div>
+                                <a href='https://www.linkedin.com/in/renchengwang/'><img class="social_link" src="images/linkedin_2.webp"></a>
+                                <a href='https://www.instagram.com/lencenwang/'><img class="social_link" src="images/insta_2.webp"></a>
+                                <a href=''><img class="social_link" src="images/facebook_2.webp"></a>
+                                <a href=''><img class="social_link" src="images/twitter_2.webp"></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div style="padding-top: 10px; text-align: center; width: 50%; float: left;">
+                <span style="color:rgb(166,158,167); font-size:small;">@ 2013 by Rencheng Wang</span>
+            </div>
+        </footer>
+    </body>
+    
+    <script>
+        $(document).ready(function(){
+            $(".row img").click(function(){
+                $("#beyond").css("display","none");
+                $("#slide").css("display", "block");
+            })
+            
+        });
+    </script>
+
+
+</html>
