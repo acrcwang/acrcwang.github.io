@@ -106,10 +106,15 @@ a {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    font-size: 17px; 
+    line-height:1.4em; 
+    font-family: 'noticia text', serif; 
+    color: rgb(34,27,35);
 }
 
 #vita button:hover {
-    background-color:rgb(141,175,45)
+    background-color:rgb(141,175,45);
+    color: white;
 }
 
 .social_link {
