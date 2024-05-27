@@ -34,14 +34,16 @@
             75%  {background-color: green; left:0px; top:200px;}
             100% {background-color: red; left:0px; top:0px;} */
             from {
+                position:absolute;
                 bottom: 0px;
-                right: 0px;
+                /* right: 0px; */
             }
             
             to {
+                position:absolute;
                 /* width:150%; */
                 bottom:-400px;
-                right:-100px;
+                /* right:-100px; */
                 opacity:.7;
             }
             }
@@ -240,7 +242,7 @@
                   
                     <div class="mySlides fade">
                       <!-- <div class="numbertext">2 / 5</div> -->
-                      <img style="width:110%; position: absolute;bottom:0px;right: 0px;animation-name: zoom;animation-duration: 7s;animation-timing-function: linear;animation-iteration-count: infinite;" src="images/research_2.webp">
+                      <img style="height:150%;width:100%; animation-name: zoom;animation-duration: 5s;animation-timing-function: linear;animation-iteration-count: infinite; object-fit:cover;" src="images/research_2.webp">
                       <div class="top" style=" top:70px; font-family: libre, baskerville, serif; font-size:25px;">Flu Fallout: Information Production Constraints and <br> Corporate Disclosure</div>
                       <img class="left" style="top:200px;" src="images/research_note_1.gif">
                       <div class="right" style="top:200px; color:rgba(255,255,255,1);">Using influenze epidemic data, we examine<br>how Constraints on corporate information<br>production affect disclosure policies. We<br>find that films in areas with higher flu<br>activity are less likely to issue short-run<br>earnings forecasts and more likely to issue<br>long-run earnings forecasts...Our results<br>suggest that managers do not simply avoid<br>issuing forecasts in response to<br>information production Constraints.<br>Instead, they shift the forecast horizon<br>from short-run to long-run, appearing to<br>balance the costs of issuing low-quality<br>forecasts with those of not issuing</div>
@@ -462,7 +464,7 @@
         showSlides(slideIndex = n);
         }
 
-        carousel();
+        //carousel();
         function carousel() {
         plusSlides(1)
         setTimeout(carousel, 7000); // Change image every 2 seconds
