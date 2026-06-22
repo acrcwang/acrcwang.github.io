@@ -76,9 +76,9 @@
                             <div class="green font-large-size">Contact Me</div>
                             <div style="margin: 20px 0; color: rgba(0, 0, 0, .7);">If you have any questions, please let me know.</div>
                             <form action="https://formspree.io/f/xwvdkplq" method="POST">
-                                  <input type="email" name="email" required />
-                                  <textarea name="message" required></textarea>
-                                  <button type="submit">Send</button>
+                                  <input type="email" pattern="^.+@.+\.[a-zA-Z]{2,63}$" autocomplete="off" class="contact_input" placeholder="Email *" required>
+                                  <textarea class="contact_input" placeholder="Message" style="height:150px;"></textarea>
+                                  <input type="submit" value="Send" style="margin-top:10px; width:45px; height:30px; background-color:black; color:white;border:none;display:block;margin-left:auto; cursor:pointer">
                             </form>
                         </div>
                     </div>
